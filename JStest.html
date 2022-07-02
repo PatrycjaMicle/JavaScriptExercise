@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1">
+    <title>Inteligenztest</title>
+    <link rel="stylesheet" href="JStest.css">
+</head>
+<body>
+
+<h1>Test</h1>
+
+<div id="question1" class="question">
+    <p class="question" id="q1">Wer begruendete die Relativitatstheorie?</p>
+    <div class="answers" id="an1" style="flex: auto">
+        <button id="but1" class="but" onclick="answer1('an1')">Newton</button> <!--false-->
+        <button id="but2" class="but" onclick="answer1('an2')">Einstein</button><!--true-->
+        <button id="but3" class="but" onclick="answer1('an3')">Galilei</button><!--false-->
+    </div>
+    <div id="result1" class="result"></div>
+</div>
+
+</br>
+
+<div id="question2" class="question">
+    <p class="question" id="q2">Das Element mit der Ordungszahl 54 ist?</p>
+    <div class="answers">
+        <input type="radio" name="element54" id="argon" value="argon" autocomplete="off">
+        <label for="argon">Argon</label>
+        <input type="radio" name="element54" id="xenon" value="xenon" autocomplete="off">
+        <label for="xenon">Xenon</label>
+        <input type="radio" name="element54" id="natrium" value="natrium" autocomplete="off">
+        <label for="natrium">Natrium</label>
+    </div>
+    </br>
+    <button type="submit" onclick="submit()" id="but4" class="but">Waehlen Sie jetzt!</button>
+    <div id="result2" class="result"></div>
+</div>
+</br>
+
+
+<div id="question3" class="question">
+    <h2>Der größte gemeinsame Teiler:</h2>
+    <p>Berechne den GGT von zwei Zahlen und schau hier nach, ob du richtig bist!</p>
+    <div class="answers">
+        <form>
+            <input type="text" id="zahl1" name="zahl" class="textfield">
+            <label for="zahl1">Zahl1</label>
+            </br>
+            <input type="text" id="zahl2" name="zahl" class="textfield">
+            <label for="zahl2">Zahl2</label>
+            </br>
+        </form>
+        <button type="submit" onclick="berechnen()" id="but5" class="but">Check!</button>
+    </div>
+    <div id="result3" class="result"></div>
+</div>
+
+
+<div id="question4" class="question">
+    <h2>Umwandlung</h2>
+    <p>Stellen Sie die Binärzahl durch Markierung der auf "1" gesetzten Binärstellen dar!
+    </p>
+    <form>
+        <input type="checkbox" id="stelle0"/>
+        <input type="checkbox" id="stelle1"/>
+        <input type="checkbox" id="stelle2"/>
+        <input type="checkbox" id="stelle3"/>
+        <input type="checkbox" id="stelle4"/>
+        <input type="checkbox" id="stelle5"/>
+        <input type="checkbox" id="stelle6"/>
+        <input type="checkbox" id="stelle7"/>
+    </form>
+</div>
+<div id="result4" class="result"></div>
+<p>Berechne jetzt die Dezimzahl und schaue hier nach ob du richtig bist!</p>
+<button type="submit" onclick="dezimzahl()" id="but6" class="but">Umwandeln in Dezimzahl</button>
+<div id="result5" class="result"></div>
+
+
+<script src="JStest.js"></script>
+</body>
+</html>
